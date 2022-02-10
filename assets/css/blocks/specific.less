@@ -1,0 +1,130 @@
+// main: ../main.css
+
+// rel="nofollow noopener noreferrer" target="_blank"
+// <!--noindex-->
+// <!--/noindex-->
+
+body.scroll {
+  overflow: hidden;
+}
+
+.animated {
+  opacity: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-width: 320px;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.tel {
+  white-space: nowrap;
+}
+
+.section-title {
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: @color3;
+  @media (max-width: 1200px) {
+    font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));
+  }
+}
+
+// h1, h2, h3, h4, h5, h6 {
+// 	font-weight: ;
+// }
+
+p {
+  line-height: 1.4em;
+}
+
+body {
+  font: 400 17px "MuseoSansCyrl", sans-serif;
+  color: @color1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  background: @color1;
+  color: @color3;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  border: none;
+  border-radius: 12px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: darken(@color1, 10%);
+}
+
+.btn:active {
+  background: darken(@color1, 15%);
+}
+
+.btn-green {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  background: @color7;
+  color: @color1;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  border: none;
+  border-radius: 12px;
+  white-space: nowrap;
+  font-weight: 600;
+  padding: 15px 57px 15px 81px;
+}
+
+.btn-green:hover {
+  background: darken(@color7, 10%);
+}
+
+.btn-green:active {
+  background: darken(@color7, 15%);
+}
+
+input:focus {
+  border: 1px solid #000;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+span {
+  display: inline-block;
+}
+
+::-moz-selection {
+  background: #6e9c9f;
+  color: #fff;
+}
+
+::selection {
+  background: @color7;
+  color: @color1;
+}

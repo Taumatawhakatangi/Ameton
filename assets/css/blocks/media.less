@@ -1,0 +1,183 @@
+// main: ../main.css
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .slick-initialized .slick-slide {
+    margin-right: 36px;
+  }
+  .slick-list.draggable {
+    padding-left: 5px;
+  }
+} // 1200px
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .header__title {
+    margin-bottom: 20px;
+  }
+  .social__container {
+    padding: 0;
+    justify-content: center;
+    & .social-title {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .social-title {
+    padding: 0;
+  }
+  .social__list {
+    padding: 0;
+  }
+  .social-title__main {
+    text-align: center;
+  }
+  .social__list {
+    flex-wrap: wrap;
+  }
+  .social__item:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+  .slick-initialized .slick-slide {
+    margin-right: 85px;
+  }
+} // 992px
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 548px;
+  }
+  .interaction__item {
+    margin-bottom: 8px;
+  }
+  .header__title {
+    padding-top: 22px;
+  }
+  .header__subtitle {
+    max-width: 500px;
+  }
+  .slick-initialized .slick-slide {
+    margin-right: -10px;
+  }
+  .slick-initialized .slick-slide.slider__item_img {
+  }
+  .slick-slide img {
+    margin-right: 23px;
+  }
+} // 768px
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+  .slick-initialized .slick-slide {
+    margin-right: 0;
+  }
+  .slider__item {
+    max-width: 100%;
+  }
+  .slider__text {
+    max-width: 400px;
+  }
+  .slick-list.draggable {
+    padding: 0;
+  }
+
+  .slider__item.slick-slide {
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 5%);
+  }
+  .slick-slide img {
+    margin-right: 0;
+  }
+  .reference__btn {
+    padding: 20px 45px 20px 24px;
+    width: 87.6%;
+  }
+} // 576px
+
+@media (max-width: 452px) {
+  .container {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+  .social__container {
+    height: 265px;
+  }
+  .social__list {
+    justify-content: center;
+  }
+} // 452px
+
+@media (max-width: 435px) {
+  .container {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+  .header__subtitle {
+    margin-bottom: 16px;
+  }
+  .header__container {
+    height: 400px;
+  }
+  .interaction__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .interaction {
+    flex-direction: column;
+  }
+  .interaction__btn_chat,
+  .interaction__btn_call,
+  .interaction__btn_mail,
+  .interaction__btn_review {
+    width: 100%;
+    padding: 15px 0 15px 0;
+  }
+  .interaction__icon_chat,
+  .interaction__icon_call,
+  .interaction__icon_mail,
+  .interaction__icon_review {
+    top: 16px;
+    left: 24px;
+  }
+  .header__detail_big {
+    bottom: 191px;
+  }
+  .reference__btn {
+    padding: 20px 45px 20px 24px;
+    width: 75%;
+  }
+} // 435px
+
+@media (max-width: 417px) {
+  .contact__btn {
+    width: 48px;
+    height: 48px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    padding: 0;
+  }
+  .contact__chat {
+    display: block;
+  }
+  .contact {
+    justify-content: space-around;
+  }
+} // 417px
+
+@media (orientation: landscape) and (max-width: 992px) {
+  .offer__title {
+    padding-bottom: 0;
+  }
+  .offer__input {
+    margin-bottom: 15px;
+  }
+} // landscape

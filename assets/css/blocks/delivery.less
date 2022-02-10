@@ -1,0 +1,99 @@
+// main: ../main.css
+
+.delivery {
+  color: @color3;
+  padding: 22px 40px;
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+    max-width: 300px;
+    margin-bottom: 17px;
+  }
+  &__icon {
+    position: absolute;
+    top: 1px;
+    right: -17px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: @color7;
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  &__about {
+    margin-bottom: 38px;
+    & p {
+      font-weight: 400;
+      font-size: 15px;
+      max-width: 690px;
+      color: @color3;
+    }
+  }
+  &__prompt {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &__chat {
+    display: none;
+  }
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 8px;
+    }
+  }
+  &__btn {
+    position: relative;
+    &-icon {
+      position: absolute;
+      top: 14px;
+      left: 56px;
+    }
+  }
+  &__phone {
+    width: 48px;
+    height: 48px;
+    background: @color6;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: darken(@color6, 10%);
+    }
+    &:active {
+      background: darken(@color6, 15%);
+    }
+  }
+  &__mail {
+    width: 48px;
+    height: 48px;
+    background: @color6;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: darken(@color6, 10%);
+    }
+    &:active {
+      background: darken(@color6, 15%);
+    }
+  }
+}
