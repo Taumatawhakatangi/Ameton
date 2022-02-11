@@ -46,6 +46,9 @@
     color: @color3;
     margin-bottom: 8px;
     max-width: 260px;
+    @media (max-width: 1200px) {
+      font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1200 - 320)));
+    }
   }
   &__text {
     font-size: 15px;

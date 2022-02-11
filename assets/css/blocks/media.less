@@ -68,6 +68,12 @@
   .slick-slide img {
     margin-right: 23px;
   }
+  .interaction {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .slider__item {
+  }
 } // 768px
 
 @media (max-width: 576px) {
@@ -76,7 +82,8 @@
     padding: 0 15px;
   }
   .slick-initialized .slick-slide {
-    margin-right: 0;
+    margin-right: 50px;
+    margin-left: 16px;
   }
   .slider__item {
     max-width: 100%;
@@ -97,6 +104,9 @@
   .reference__btn {
     padding: 20px 45px 20px 24px;
     width: 87.6%;
+  }
+  .slider__arrow_next {
+    right: 27px;
   }
 } // 576px
 
@@ -170,6 +180,16 @@
   }
   .contact {
     justify-content: space-around;
+  }
+  .slick-initialized .slick-slide {
+    margin-right: 12px;
+    margin-left: 8px;
+  }
+  .slider__item.slick-slide {
+    opacity: 0;
+  }
+  .slider__item.slick-slide.slick-active {
+    opacity: 1;
   }
 } // 417px
 

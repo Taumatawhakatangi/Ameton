@@ -824,8 +824,6 @@ span {
 }
 .interaction {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .interaction__btn_chat {
   padding: 15px 26px 15px 47px;
@@ -973,6 +971,11 @@ span {
   color: #1a1a1a;
   margin-bottom: 8px;
   max-width: 260px;
+}
+@media (max-width: 1200px) {
+  .slider__title {
+    font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (1200 - 320)));
+  }
 }
 .slider__text {
   font-size: 15px;
@@ -1265,6 +1268,10 @@ span {
   .slick-slide img {
     margin-right: 23px;
   }
+  .interaction {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1272,7 +1279,8 @@ span {
     padding: 0 15px;
   }
   .slick-initialized .slick-slide {
-    margin-right: 0;
+    margin-right: 50px;
+    margin-left: 16px;
   }
   .slider__item {
     max-width: 100%;
@@ -1292,6 +1300,9 @@ span {
   .reference__btn {
     padding: 20px 45px 20px 24px;
     width: 87.6%;
+  }
+  .slider__arrow_next {
+    right: 27px;
   }
 }
 @media (max-width: 452px) {
@@ -1362,6 +1373,16 @@ span {
   }
   .contact {
     justify-content: space-around;
+  }
+  .slick-initialized .slick-slide {
+    margin-right: 12px;
+    margin-left: 8px;
+  }
+  .slider__item.slick-slide {
+    opacity: 0;
+  }
+  .slider__item.slick-slide.slick-active {
+    opacity: 1;
   }
 }
 @media (orientation: landscape) and (max-width: 992px) {
